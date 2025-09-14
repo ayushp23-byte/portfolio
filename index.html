@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush | E-Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div><strong>Ayush</strong></div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#work">Work</a>
+        <a href="#extracurricular">Extracurricular</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <img src="ayush.jpeg" alt="Profile Photo">
+    <h1>Ayush</h1>
+    <p>Software Engineer | Chennai, India</p>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm <strong>Ayush</strong>, a motivated and passionate Software Engineer from Chennai, India.  
+        I am currently pursuing my B.Tech at IIIT Sri City, with a keen interest in problem-solving, algorithm design, and building scalable applications.  
+        My journey in programming started with curiosity about how software really works, and since then, I've been constantly exploring new technologies, sharpening my skills, and solving real-world challenges.  
+        Apart from academics, I enjoy reading, experimenting with new coding projects, and engaging in collaborative learning environments.  
+        My goal is to contribute to impactful projects and keep growing as a developer, innovator, and lifelong learner.  
+      </p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <p>Currently pursuing B.Tech at <strong>IIIT Sri City</strong>, expected graduation: <strong>2027</strong>.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span><i class="fa-brands fa-python"></i> Python</span>
+        <span><i class="fa-solid fa-database"></i> MySQL</span>
+        <span><i class="fa-solid fa-code"></i> C++</span>
+        <span><i class="fa-solid fa-chart-line"></i> R</span>
+        <span><i class="fa-brands fa-java"></i> Java</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Work Experience / Projects</h2>
+      <p>To be added...</p>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="container">
+      <h2>Achievements & Awards</h2>
+      <ul>
+        <li>Knight in LeetCode</li>
+      </ul>
+      <div class="achievement-img">
+        <img src="knight.jpeg" alt="Knight in LeetCode Badge">
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="container">
+      <h2>Reflections / Personal Statement & Samples of Work</h2>
+      <p>To be added...</p>
+    </div>
+  </section>
+
+  <section id="extracurricular">
+    <div class="container">
+      <h2>Extracurricular & Volunteering</h2>
+      <ul>
+        <li>Reading</li>
+        <li>Playing Games</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="resume">
+    <div class="container">
+      <h2>Resume & References</h2>
+      <p>To be added...</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact / Links</h2>
+      <p>Email: ayush.p23@iiits.in</p>
+      <div class="links">
+        <a href="https://leetcode.com/u/ayush_092005/"><i class="fa-solid fa-code"></i> LeetCode</a>
+        <a href="https://www.instagram.com/ayush_092005/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="https://www.linkedin.com/in/ayush-9a0b4a298/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+      </div>
+
+      <form class="contact-form">
+        <label for="message">Send me a message:</label><br>
+        <textarea id="message" placeholder="Write your message here..." rows="5"></textarea><br>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ayush | Personal E-Portfolio</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll("nav a").forEach(link => {
+      link.addEventListener("click", () => {
+        document.querySelector("nav a.active")?.classList.remove("active");
+        link.classList.add("active");
+      });
+    });
+
+    document.querySelector(".contact-form").addEventListener("submit", e => {
+      e.preventDefault();
+      alert("Message feature coming soon!");
+    });
+  </script>
+</body>
+</html>
